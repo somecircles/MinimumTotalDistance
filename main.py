@@ -49,9 +49,7 @@ def gethtml(url):
 def get_distance(i, j):
     #print(i.x, i.y, j.x, j.y)
     url = 'https://api.map.baidu.com/direction/v2/driving?origin=' + str(i.y) + ',' + str(
-        i.x) + '&destination=' + str(j.y) + ',' + str(j.x) + '&tactics=2&ak=1xFtFl3VpacPysVf79B5bG6TWUatN5jj'
-    #print(url)
-    #url = 'https://api.map.baidu.com/direction/v2/driving?origin=40.01116,116.339303&destination=39.936404,116.452562&ak=1xFtFl3VpacPysVf79B5bG6TWUatN5jj'
+        i.x) + '&destination=' + str(j.y) + ',' + str(j.x) + '&tactics=2&ak=yourAK'
     a=gethtml(url)
     data = json.loads(a)
     #print(data)
